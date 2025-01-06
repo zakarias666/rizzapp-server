@@ -12,8 +12,10 @@ const apiKey = process.env.API_KEY;
 const Database = require('./db.js');
 const db = new Database();
 
-db.insertKey(process.env.ADMIN_KEY, 99);
-db.insertKey(process.env.TEST_KEY, 20);
+setTimeout(() => {
+    db.insertKey(process.env.ADMIN_KEY, 99);
+    db.insertKey(process.env.TEST_KEY, 20);
+}, 1000);
 
 const Menu = require('./menu.js');
 const menu = new Menu(db);
