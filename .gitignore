@@ -41,9 +41,6 @@ coverage/
 *.db-wal
 *.db-shm
 
-# Ignore uploads
-uploads/
-
 # Ignore generated lock files
 package-lock.json
 yarn.lock
