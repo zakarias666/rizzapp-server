@@ -82,7 +82,7 @@ class Database {
                     } else if (row) {
                         resolve(row.uses);
                     } else {
-                        resolve(null);
+                        resolve(0);
                     }
                 }
             );
